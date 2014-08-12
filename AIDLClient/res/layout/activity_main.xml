@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+	<TextView 
+	    android:id="@+id/text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="AIDL 进程间通信，此计算是通过另一个进程进行的"
+	    />    
+	<EditText 
+	    android:id="@+id/a"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/text"
+	    android:inputType="number"
+	    />
+	<EditText 
+	    android:id="@+id/b"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/a"
+	    android:inputType="number"
+	    />
+	
+	<Button 
+	    android:id="@+id/start"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/b"
+	    android:text="计算"
+	    />
+	
+	<TextView 
+	    android:id="@+id/result"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/start"
+	    />
+</RelativeLayout>
